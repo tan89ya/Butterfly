@@ -1,0 +1,75 @@
+// USER VARIABLES SECTION
+
+$accent: #63AFE0 // Accent Color
+$green: #8ACDD6
+$dark: #0C6390
+$light: #fafafa
+$fontsize: 16px // Body Font Size
+$textcolor: #333 // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: raleway-bt, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+
+@import 'app/libs/mmenu-js-master/dist/mmenu'
+@import 'app/libs/hamburgers-master/dist/hamburgers'
+@import 'app/libs/owlcarousel/dist/assets/owl.carousel.min'
+@import 'app/libs/owlcarousel/dist/assets/owl.theme.default.min'
+@import 'app/libs/selectize-js-master/dist/css/selectize.default'
+
+
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('roboto-bt', light, 200, '../fonts/roboto-light.woff2')
+@include font('roboto-bt', light, 400, '../fonts/RobotoRegular.woff')
+@include font('roboto-bt', medium, 500, '../fonts/RobotoMedium.woff')
+@include font('raleway-bt', light, 200, '../fonts/raleway-light.woff2')
+@include font('raleway-bt', normal, 400, '../fonts/ralewayregular-webfont.woff2')
+@include font('raleway-bt', medium, 500, '../fonts/RalewayMedium.woff')
+@include font('raleway-bt', semibold, 600, '../fonts/Raleway-SemiBold.woff2')
+@include font('raleway-bt', bold, 700, '../fonts/Raleway-Bold.woff2')
+@include font('gogol-bt', normal, 400, '../fonts/Gogol.woff2')
+
+// GENERAL CSS SETTINGS
+
+::placeholder
+	color: rgba($color: #333, $alpha: .7)
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	background-color: $light
+
+
