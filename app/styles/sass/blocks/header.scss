@@ -1168,6 +1168,11 @@ h4 {
 	height: 230px;
 	background-position: center;
 	background-size: cover;
+	transition: all 0.5s ease;
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+	}
 	@include media-breakpoint-down(lg) {
 		width: 323.21px;
 		height: 190px;
@@ -1183,6 +1188,11 @@ h4 {
 	height: 230px;
 	background-position: center;
 	background-size: cover;
+	transition: all 0.5s ease-out;
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+	}
 	@include media-breakpoint-down(lg) {
 		width: 323.21px;
 		height: 190px;
@@ -1198,6 +1208,11 @@ h4 {
 	height: 480px;
 	background-position: center;
 	background-size: cover;
+	transition: all 0.5s ease-out;
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+	}
 	@include media-breakpoint-down(lg) {
 		width: 323.21px;
 		height: 400px;
@@ -1213,6 +1228,11 @@ h4 {
 	height: 230px;
 	background-position: center;
 	background-size: cover;
+	transition: all 0.5s ease-out;
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+	}
 	@include media-breakpoint-down(lg) {
 		width: 323.21px;
 		height: 190px;
@@ -1228,6 +1248,11 @@ h4 {
 	height: 230px;
 	background-position: center;
 	background-size: cover;
+	transition: all 0.5s ease-out;
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+	}
 	@include media-breakpoint-down(lg) {
 		width: 323.21px;
 		height: 190px;
@@ -1268,6 +1293,11 @@ h4 {
 	height: 480px;
 	background-position: center;
 	background-size: cover;
+	transition: all 0.5s ease-out;
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+	}
 	@include media-breakpoint-down(lg) {
 		width: 323.21px;
 		height: 400px;
@@ -1283,6 +1313,11 @@ h4 {
 	height: 230px;
 	background-position: center;
 	background-size: cover;
+	transition: all 0.5s ease-out;
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+	}
 	@include media-breakpoint-down(lg) {
 		width: 323.21px;
 		height: 190px;
@@ -1298,6 +1333,11 @@ h4 {
 	height: 230px;
 	background-position: center;
 	background-size: cover;
+	transition: all 0.5s ease-out;
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+	}
 	@include media-breakpoint-down(lg) {
 		width: 323.21px;
 		height: 190px;
@@ -1313,6 +1353,11 @@ h4 {
 	height: 480px;
 	background-position: center;
 	background-size: cover;
+	transition: 0.5s ease-out;
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+	}
 	@include media-breakpoint-down(lg) {
 		width: 323.21px;
 		height: 400px;
